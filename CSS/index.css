@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Muli:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;    
+}
+
+/*Estilo al menú*/
+
+header{
+    text-align: right;
+    position: relative;
+    z-index: 1;
+    font-family: 'Galada', cursive;
+    font-size: 20px;
+    background-color: rgb(3, 2, 0);
+}
+
+
+header nav ul li a{
+    color: white;
+}
+
+/* Estilos generales */
+nav ul{
+    list-style-type: none;
+    text-align: right;
+}
+nav li{
+    line-height: 2.5em;
+}
+nav a{
+    color: #ddd;
+    display: block;
+    padding: 0 2.5em;
+    text-decoration: none;
+}
+nav a:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Primer nivel */
+nav>ul{
+    background-color: #333;
+    width: 100%;
+    overflow: hidden;
+}
+nav>ul>li{
+    float: left;
+}
+
+/* Segundo nivel */
+nav>ul>li>ul{
+    position: absolute;
+    display: none;
+    color: white;
+}
+nav>ul>li:hover ul{
+    display: block;
+    animation-name: submenu;
+    animation-duration: 0.5s;
+    transform-origin: top right;
+    z-index: 100;
+}
+nav>ul>li>ul>li{
+    background-color: #222;
+}
+@keyframes submenu{
+    0%{
+        transform: scale(0);
+        transition: ease-out;
+    }
+    25%{
+        transform: scale(0.25);
+        transition: ease-out;
+    }
+    50%{
+        transform: scale(0.50);
+        transition: ease-out;
+    }
+    75%{
+        transform: scale(0.75);
+        transition: ease-out;
+    }
+    100%{
+        transform: scale(1);
+        transition: ease-out;
+    }
+}
+.fondo{
+    position: absolute;
+    background-attachment: fixed; 
+}
+.Fondo{
+    position: relative;
+    width: 100%;
+    height: 465px;
+    background: rgba(138, 120, 120, 0.8);
+    opacity: 1;
+    background-image: url(../IMG/progra.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 5px 50px;
+    box-sizing: border-box;
+}
+
+.opacidad{
+    width: 100%;
+    height: 465px;
+    background: rgba(31, 31, 31, 0.7);
+    opacity: 1;
+    z-index: -1;
+}
+
+.info h2 p{
+    font-size: 35px;
+    padding: 10px;
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    top: 32px;
+}
+
+.info{
+    position: absolute;
+    top: 50%;
+    left: 130px;
+    color: #fff;
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Galada', cursive;
+    margin-top: 70px;
+}
+
+/*Contenido de la página */
+
+.container{
+    margin-top: 40px;
+}
+.container h1{
+    font-family: 'Galada', cursive;
+    font-size: 3.5em;
+    text-align: center;
+}
+.container>p{
+    padding: 0px 50px 0px 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+}
+#principal{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 25px 10px 25px 10px;
+    background-color: rgb(163, 154, 147);
+    box-shadow: 0 5px 30px;
+    border-top: 3px solid rgb(77, 74, 72);
+    border-bottom: 3px solid rgb(77, 74, 72);
+}
+#principal .card{
+    background-color: rgb(163, 154, 147);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 20%;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+    transition: all 0.25s;
+    border: 4.5px solid white;
+}
+
+#principal .card:hover{
+    z-index: 5;
+    transform: rotate(20deg) scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.767);
+}
+#principal .card img{
+    width: 100%;
+    height: 220px;
+    border-bottom: 2px solid white;
+}
+.blogcontent h4{
+    font-weight: 600;
+    font-family: 'Galada', cursive;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+.container #principal .datos{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.boton_inv{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #000;
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+.boton_inv:hover{
+    color: #1883ba;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 480px){
+    /*Estilos para moviles*/
+    header{
+        width: 100%;
+        padding: 0px;
+    }
+    .container, footer{
+        width: 100%;
+    }
+    ul li{
+        width: 100%;
+    }
+    ul li ul{
+        width: 100%;
+    }
+    .info{
+        top: 30%;
+        left: 0px;
+        font-size: 2em;
+    }
+    .Fondo, .opacidad{
+        height: 565px;
+    }
+    .container>p{
+        font-size: 2em;
+    }
+    .container h1{
+        font-size: 4.2em;
+    }
+    .blogcontent h4{
+        font-size: 2.5em;
+    }
+    #principal{
+        display: block;
+        padding: 20px 40px 20px 40px;
+    }
+    #principal .card{
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+        height: 290px;
+    }
+    .container #principal .datos{
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+	/*Estilos para tablets*/
+    header{
+        width: 100%;
+        padding: 0px;
+    }
+    .container, footer{
+        width: 100%;
+    }
+    
+    .info{
+        top: 30%;
+        left: 50px;
+        font-size: 2em;
+    }
+    .Fondo, .opacidad{
+        height: 565px;
+    }
+    .container h1{
+        font-size: 5em;
+    }
+    .container>p{
+        font-size: 2em;
+    }
+    #principal{
+        display: block;
+        padding: 20px 80px 20px 80px;
+    }
+    #principal .card{
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+        height: 520px;
+    }
+    .blogcontent h4{
+        font-size: 4em;
+    }
+    #principal .card img{
+        height: 420px;
+    }
+    .container #principal .datos{
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 769px){
+	/*Estilos para pc*/
+	.container, footer{
+        width:100%;
+    }
+    header{
+        height: 50px;
+    }
+    .info{
+        font-size: 2em;
+    }
+    .container h1{
+        font-size: 4em;
+    }
+    .container p{
+        font-size: 2em;
+    }
+    .container #principal .datos{
+        font-size: 1.7em;
+    }
+}

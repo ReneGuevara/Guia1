@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable=no>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <title>Blog Personal</title>
+</head>
+
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a>Guías</a>
+                <ul class="sub">
+                    <li><a href="../guia1.html">Guía #1</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <div class="Fondo">
+        <div class="background-shadow"></div>
+        <div class="opacidad"></div>
+        <div class="info">
+            <h2>Programación</h2>
+            <p>Si se puede imaginar, se puede programar!</p>
+        </div>
+    </div>
+    <div class="container">
+        <h1 id="inv">JavaScript no obstructivo</h1>
+        <p>JavaScript no obstructivo es un paradigma floreciente en el uso del lenguaje de programación JavaScript, utilizado en la Web. Aunque el término no se define formalmente, sus principios generalmente incluyen:
+        </p>
+
+        <div id="principal">
+            <div class="card">
+                <img src="../IMG/Js.png" >
+                <div class="blogcontent">
+                    <h4>No obstructivo</h4>
+                </div>
+            </div>
+          <p>
+            1. Separación de la capa de funcionalidad que generamos con nuestro JavaScript, de las capas de estructura/contenido generado con HTML y la capa de presentación de un página. <br><br>
+            
+            2. Adquisición de buenas prácticas con el objetivo de evitar problemas de incompatibilidad en JavaScript (tales como inconsistencias entre navegadores y falta de escalabilidad)
+            </p>
+        </div>
+        
+        <p>Un ejemplo práctico acerca de esto es el siguiente: </p>
+        
+        <button class="boton_inv" onclick="alerta()">Hazme click!</button>
+        
+        <p>Si la funcionalidad del botón lo hubiera colocado de la siguiente manera dentro del código HTML, no estaría utilizando un método no obstructivo: </p>
+        <p>onclick = "alert("Hola")"</p>
+        <p>En cambio al realizar esta acción desde el archivo .js, si estoy aplicando un método no obstructivo</p>
+        
+        <h1>Tipos de datos null y undefined en JavaScript</h1>
+        <p><b>UNDEFINED</b></p>
+        <p>Cuando una variable ha quedado sin definir tiene un valor especial denominado undefined, que se podría traducir como «sin definir«. Este valor puede resultar un poco desconcertante, ya que además de un tipo de datos, existe una variable con ese nombre y también es un valor como tal.</p>
+        <br>
+        <p><b>UNDEFINED</b></p>
+        <p>
+        El caso del valor nulo es también bastante singular. En este caso null es un literal definido en la especificación del lenguaje, no una variable global como en el caso undefined, por lo tanto, es una palabra reservada y no podremos utilizarla como nombre de variable.
+
+        Podemos directamente utilizar el literal null para comprobar este valor es el que contiene una determinada variable o es el retorno de una función.</p>
+    </div>
+    <footer>
+        Derechos Reservados, René Guevara 2020
+    </footer>
+
+</body>
+<script src="js/investigacion.js"></script>
+</html>
