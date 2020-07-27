@@ -105,7 +105,9 @@ nav>ul>li>ul>li{
     box-shadow: 0 5px 50px;
     box-sizing: border-box;
 }
-
+#arreglo{
+    padding-left: 50px;
+}
 .opacidad{
     width: 100%;
     height: 465px;
