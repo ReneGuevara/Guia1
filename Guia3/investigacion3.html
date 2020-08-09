@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable=no>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <title>Blog Personal</title>
+</head>
+
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a>Guías</a>
+                <ul class="sub">
+                    <li><a href="../guia1.html">Guía #1</a></li>
+                    <li><a href="../guia2.html">Guía #2</a></li>
+                    <li><a href="../guia3.html">Guía #3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <div class="Fondo">
+        <div class="background-shadow"></div>
+        <div class="opacidad"></div>
+        <div class="info">
+            <h2>Programación</h2>
+            <p>Si se puede imaginar, se puede programar!</p>
+        </div>
+    </div>
+    <div class="container">
+        <h1 id="inv">Closures</h1>
+        <p>Una clausura o closure es una función que guarda referencias del estado adyacente (ámbito léxico). En otras palabras, una clausura permite acceder al ámbito de una función exterior desde una función interior. En JavaScript, las clausuras se crean cada vez que una función es creada.</p>
+        <p>Un closure es un tipo especial de objeto que combina dos cosas: una función, y el entorno en que se creó esa función. El entorno está formado por las variables locales que estaban dentro del alcance en el momento que se creó el closure.</p>
+
+        <br>
+    
+        <h1>¿Para qué podemos utilizar las Closures?</h1>
+        <br>
+        <p> Un closure permite asociar algunos datos (el entorno) con una función que opera sobre esos datos. Por lo tanto, la mejor opción para utilizar una clausura es cuando necesitamos crear una función que tenga diferentes entornos.</p>
+        <br>
+        <p>Ejemplos:</p>
+        
+        <button class="boton_inv" id="ejemplo1">Hola!</button>
+        <button class="boton_inv" id="ejemplo2">¿Cómo estás?</button>
+        <button class="boton_inv" id="ejemplo3">Adiós!</button>
+        
+        <h1>¿Cuándo utilizar Closures?</h1>
+        <br>
+        <p>No es aconsejable crear innecesariamente funciones dentro de otras funciones si no se necesitan los closures para una tarea particular ya que afectará negativamente el rendimiento del script tanto en consumo de memoria como en velocidad de procesamiento.</p>
+        <p>Por ejemplo, cuando se crea un nuevo objeto/clase, los métodos normalmente deberían asociarse al prototipo del objeto en vez de definirse en el constructor del objeto. La razón es que con este último sistema, cada vez que se llama al constructor (cada vez que se crea un objeto) se tienen que reasignar los métodos.</p>
+        <br>
+        <p>Ejemplo práctico: Cambiar color de fondo</p>
+        
+        <button class="boton_inv" id="celeste">Celeste</button>
+        <button class="boton_inv" id="amarillo">Amarillo</button>
+        <button class="boton_inv" id="blanco">Blanco</button>
+    </div>
+    <footer>
+        Derechos Reservados, René Guevara 2020
+    </footer>
+
+</body>
+<script src="js/investigacion3.js"></script>
+</html>
