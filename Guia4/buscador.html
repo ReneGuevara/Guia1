@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Diccionario</title>
+    <meta charset="utf-8" />
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
+    <link rel="stylesheet" href="css/buscador.css" />
+</head>
+
+<body>
+    <div class="box-wrap">
+        <form id="frmsearchword" name="frmsearchword">
+            <fieldset id="box-form">
+                <legend>¿Qué palabra buscas?</legend>
+                <label for="txtpalabra">Ingresa una palabra:</label>
+                <input type="text" id="txtpalabra" name="busca" size="24"><br />
+                <label for="lstpalabra">Listado:</label>
+                <select name="lstpalabra" id="lstpalabra" size="24"><br>
+                <input type="text" id="txtsig" name="significado" size="24" readonly="readonly"><br />
+                <label for="txtsig">Significado</label>
+                </select>
+            </fieldset>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="js/buscar.js"></script>
+</html>
