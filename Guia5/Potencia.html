@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Potencia</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/slick.css" />
+</head>
+<body>
+	<section id="slick">
+		<!-- Área de formulario -->
+		<div class="contact-form">
+			<!-- Título -->
+			<div class="title">Potencia de un número</div>
+			<!-- Texto indicativo -->
+			<p class="intro">Ingrese los siguientes datos</p>
+			<!-- Formulario -->
+			<div class="w-100">
+				<!-- Campos de formulario -->
+				<form name="frmpotencia" id="frmpotencia" action="javascript:void(0);">
+					<!-- Campo para la base -->
+					<div class="field">
+						<input type="number" name="base" id="txtbase" min="0" max="1000"
+						step=".1" placeholder="(Base)" required />
+						<span class="entypo-base icon"></span>
+						<span class="slick-tip left">Ingrese la base:</span>
+					</div>
+					<!-- Campo para la altura -->
+					<div class="field">
+						<input type="number" name="potencia" id="txtpotencia" min="0" max="1000"
+						step=".1" placeholder="(Potencia)" required />
+						<span class="entypo-altura icon"></span>
+						<span class="slick-tip left">Ingrese la potencia:</span>
+					</div>
+					<p class="intro" id="res">Resultado: </p>
+					<!-- Botones para hacer los cálculos -->
+					<input type="button" value="Calcular" class="send" name="btncalcular" id="calc" />
+				</form>
+				<!-- Fin de campos de formulario -->
+			</div>
+		</div>
+		<!-- Final del área del formulario -->
+	</section>
+</body>
+<script type="text/javascript" src="js/potencia.js"></script>
+</html>

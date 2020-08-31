@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Registro de Sitio Web</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/modernform.css" />
+	<script type="text/javascript" src="js/registro.js"></script>
+</head>
+<body>
+	<div class="container">
+		<section class="tabblue">
+			<ul class="tabs blue">
+				<li>
+					<input name="tabs blue" id="tab1" checked="" type="radio">
+					<label for="tab1">Datos del usuario</label>
+					<div id="tab-content1" class="tab-content">
+						<p>
+							Ingresa los siguientes datos para completar tu registro.
+						</p>
+						<form name="frmregis" id="pais">
+							<span class="tabaddon"><i class="fa fa-user fa-2x"></i></span>
+							<input type="text" name="txtname" id="txtname" required="required"
+							placeholder="(Nombres)" class="field" />
+							<span class="tabaddon"><i class="fa fa-envelope fa-2x"></i></span>
+							<input type="text" name="txtlastname" id="txtlastname"
+							required="required" placeholder="(Apellidos)" class="field" />
+							<span class="tabaddon"><i class="fa fa-envelope fa-2x"></i></span>
+							<input type="email" name="txtemail" id="txtemail" required="required"
+							placeholder="(E-mail)" class="field"/>
+							<span class="tabaddon"><i class="fa fa-envelope fa-2x"></i></span>
+							<input type="password" name="txtpass" id="txtpass" required="required"
+							placeholder="(Password)" class="field"/>
+							<span class="tabaddon"><i class="fa fa-envelope fa-2x"></i></span>
+							<input type="text" name="txtdir" id="txtdir" required="required"
+							placeholder="(Dirección)" class="field" />
+							<div class="btn">
+								<input type="button" name="btnSend" id="btnSend" value="Registrar"
+								/>
+							</div>
+						</form>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</div>
+</body>
