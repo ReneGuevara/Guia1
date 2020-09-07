@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Llenando el tanque</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/pizza.css" />
+</head>
+<body>
+	<header id="box">
+		<h1 id="flashlight">
+			<span id="flash">LLENADO DE</span>
+			<span id="light">GASOLINA</span>
+		</h1>
+	</header>
+	<form action="javascript:void(0);" class="demoForm" id="gasForm">
+		<fieldset>
+			<legend>Gasolina</legend>
+			<p>Tipo de gassolina:
+				<label><input    type="radio"    name="tipo"    value="4.27"    checked="checked" />Especial</label>
+				<label><input type="radio" name="tipo" value="4.05" />Regular</label>
+				<label><input type="radio" name="tipo" value="3.96" />Diesel</label>
+				<input type="hidden" name="sz_tot" value="0.00" />
+			</p>
+			<p id="pizza_toppings"><label>Cantidad de gasolina:</label>
+				<label><input type="number" name="cantidad" value="1.25" min="0.05" step="0.05" id="n" /> galones</label>
+				<input type="hidden" name="tops_tot" value="0.00" />
+			</p>
+			<p>
+				<label>Total:    $<input    type="text"    name="total"    class="num"    value="0.00" readonly="readonly" />
+				</label>
+			</p>
+			<p>
+				<input type="submit" name="submit" value="Submit" />
+			</p>
+		</fieldset>
+	</form>
+	<script src="js/gasolina.js"></script>
+</body>
+</html>

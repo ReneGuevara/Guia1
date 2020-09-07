@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: Tahoma,Helvetica,"Liberation Sans";
+}
+
+.poema {
+    background:#fff;
+    text-align: center;
+    font-style:italic; 
+    line-height: 30pt;
+    font-size: 12pt;
+    color: blue;
+    padding:30px 30px 30px 30px; 
+}
+
+.derecha{
+    color: red;
+    font: 16px "Comic Sans MS", cursive;
+    padding-right: 12px;
+    text-align: right;
+    text-decoration: bold;
+    padding:30px 30px 30px 30px; 
+}
+
+.justificado{
+
+    /* Dejar suficiente espacio de relleno para acomodar la sombra */
+    padding:30px 30px 30px 30px; 
+    font-family: Tahoma,Helvetica,"Liberation Sans";
+    font-size:12px;
+    letter-spacing:5px;
+    font-weight:bold;
+    text-align: justify;
+    color: darkgreen;
+}

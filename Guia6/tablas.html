@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Tabla creada dinámicamente con JavaScript</title>
+	<link rel="stylesheet" href="css/tablas.css" />
+	<script src="js/tablas.js"></script>
+</head>
+<body>
+	<div class="main_content">
+		<!--
+		========================================================================================
+		Header Div.
+		========================================================================================
+		-->
+		<div class="first">
+			<p>
+				<img id="logo" src="img/form.png" />
+				<h1>Constructor de tablas</h1>
+			</p>
+		</div>
+		<!--
+		======================================================================================
+		This Div is for the Buttons. When user click on 
+		buttons, respective field will appear.
+		=======================================================================================
+		-->
+		<div class="two">
+			<h4>Datos para el manejo de la tabla</h4>
+			<br>
+			<h4>Filas</h4>
+			<input type="number" name="filas" id="filas" min="1" max="9" step="1">
+			<h4>Columnas</h4>
+			<input type="number" name="columnas" id="columnas" min="1" max="9" step="1">
+			<button id="crear">Crear Tabla</button>
+			<h4>Fila a editar</h4>
+			<input type="number" name="Efilas" id="Efilas" min="0" max="8" step="1">
+			<h4>Columna a editar</h4>
+			<input type="number" name="Ecolumnas" id="Ecolumnas" min="0" max="8" step="1">
+			<h4>Texto</h4>
+			<input type="text" name="texto" id="texto">
+			<button id="editar">Editar Celda</button>
+			<button id="reset">Restablecer</button>
+		</div>
+		<!--
+		========================================================================================
+		This Div is meant to display final form.
+		========================================================================================
+		-->
+		<div class="three">
+			<h2>Tabla creada dinámicamente</h2>
+			<div id="tabla"></div>
+		</div>
+	</div> <!--Fin de div id="main_content" -->
+</body>
+</html>

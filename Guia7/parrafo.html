@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Cambio de clases CSS dinámico</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/parrafo.css" />
+	<link rel="stylesheet" href="css/button.css" />
+	<script src="js/CSSClass.js"></script>
+	<script src="js/classname.js"></script>
+</head>
+<body>
+	<header>
+		<p id="head">Los objetos del DOM modelizan tanto la ventana del navegador como el historial, el documento o página web, y todos los elementos que pueda tener dentro la propia página, como párrafos, divisiones, tablas, formularios y sus campos, etc. A través del DOM se puede acceder, por medio de Javascript, a cualquiera de estos elementos, es decir a sus correspondientes objetos para alterar sus propiedades o invocar a sus métodos. Con todo, a través del DOM, queda disponible para los programadores de Javascript, cualquier elemento de la página, para modificarlos, suprimirlos, crear nuevos elementos y colocarlos en la página, etc. </p>
+	</header>
+	<br>
+	<section>
+		<article>
+			<form name="frmclass">
+				<label>Estilo:</label>
+				<select name="classes">
+					<option value="" selected="selected">(Escoja un estilo)</option>
+					<option value="poema">Poema</option>
+					<option value="derecha">Alineado a la derecha</option>
+					<option value="justificado">Justificado</option>
+				</select><br/>
+				<input type="button" name="agregar" id="add" value="Agregar" />
+				<input type="button" name="eliminar" id="remove" value="Eliminar" />
+			</form>
+		</article>
+	</section>
+</body>
+</html>
