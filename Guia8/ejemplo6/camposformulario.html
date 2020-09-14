@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Controladores de eventos para elementos de formulario</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/form.css" />
+</head>
+<body>
+	<!--Formulario con todos los tipos de campos de formulario -->
+	<div id="formulario">
+		<form name="everything">
+			<ul class="inputelements">
+				<li>[1]<input type="text" name="username" placeholder="Usuario" /></li>
+				<li>[2]<input type="password" name="password" placeholder="Contraseña" /></li>
+				<li>[3]<input type="file" name="file" placeholder="Elija un archivo" /></li>
+			</ul>
+			<ul class="chkelements">
+				<li><label for="extras">Periféricos de la compudora:</label></li>
+				<li>[4]<input type="checkbox" name="extras" value="quemador" />
+					<label>Quemador de CD/DVD</label>
+				</li>
+				<li>[4]<input type="checkbox" name="extras" value="impresor" />
+					<label>Impresor</label>
+				</li>
+				<li>[4]<input type="checkbox" name="extras" value="parlantes" />
+					<label>Parlantes</label>
+				</li>
+				<li>[4]<input type="checkbox" name="extras" value="inalambrica" />
+					<label>Tarjeta de red inalámbrica</label>
+				</li>
+				<li>[4]<input type="checkbox" name="extras" value="mouse optico" />
+					<label>Mouse óptico</label>
+				</li>
+			</ul>
+			<ul class="radelements">
+				<li>
+					<label for="browser">Mi navegador preferido:</label>
+				</li>
+				<li>[5]<input type="radio" name="browser" value="firefox">
+					<label>Mozilla firefox</label>
+				</li>
+				<li>[5]<input type="radio" name="browser" value="iexplorer">
+					<label>Internet Explorer</label>
+				</li>
+				<li>[5]<input type="radio" name="browser" value="netscape">
+					<label>Maxthon</label>
+				</li>
+				<li>[5]<input type="radio" name="browser" value="opera">
+					<label>Opera</label>
+				</li>
+				<li>[5]<input type="radio" name="browser" value="safari">
+					<label>Safari</label>
+				</li>
+				<li>[5]<input type="radio" name="browser" value="chrome">
+					<label>Chrome</label>
+				</li>
+			</ul>
+			<ul class="hobies">
+				<li>
+					<label for="hobbies">Mis pasatiempos</label>
+				</li>
+				<li>
+					<li>[6]<select name="hobbies" size="6" multiple>
+						<option value="programar" selected="selected">Programar con JavaScript</option>
+						<option value="musica">Escuchar música</option>
+						<option value="cine">Ir al cine</option>
+						<option value="playa">Ir a la playa</option>
+						<option value="leer">Leer obras</option>
+						<option value="surfear">Surfear</option>
+						<option value="bailar">Ir a bailar</option>
+						<option value="viajar">Ir de viaje</option>
+					</select>
+				</li>
+			</ul>
+			<ul class="colors">
+				<li>
+					<label for="color">Color favorito:</label>
+				</li>
+				<li>[7]<select name="color">
+					<option value="red" selected="selected">Rojo</option>
+					<option value="blue">Azul</option>
+					<option value="yellow">Amarillo</option>
+					<option value="purple">Morado</option>
+					<option value="orange">Naranja</option>
+					<option value="pink">Rosado</option>
+					<option value="green">Verde</option>
+					<option value="gray">Gris</option>
+					<option value="black">Negro</option>
+					<option value="white">Blanco</option>
+				</select>
+			</li>
+		</ul>
+		<ul class="events">
+			<li>[8]<textarea name="textarea" placehold="Eventos capturados"></textarea>
+			</li>
+		</ul>
+		<ul class="buttons">
+			<li>[9] <input type="button" value="Limpiar" name="clearbutton" />
+			</li>
+			<li>[10]<input type="submit" value="Enviar" name="submitbutton" />
+			</li>
+			<li>[11]<input type="reset" value="Restablecer" name="resetbutton" />
+			</li>
+		</ul>
+	</form>
+</div>
+<!--Tabla con la descripción de los campos -->
+<div id="tabla">
+	<table class="tabla">
+		<tr>
+			<th>Elementos de formulario</th>
+			<td>[1]Text</td>
+			<td>[2]Password</td>
+			<td>[3]File</td>
+			<td>[4]Checkbox</td>
+			<td>[5]Radio</td>
+		</tr>
+		<tr>
+			<td>[6]Select list</td>
+			<td>[7]Select menu</td>
+			<td>[8]Textarea</td>
+			<td>[9]Button</td>
+			<td>[10]Submit</td>
+			<td>[11]Reset</td>
+		</tr>
+	</table>
+</div>
+<script type="text/javascript" src="js/eventreport.js"></script>
+</body>
+</html>

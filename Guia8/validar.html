@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Validaciones de entrada</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/formstyle.css" />
+    <script src="js/validar.js"></script>
+    <!-- Para las versiones anteriores del IE9 -->
+    <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <header>
+        <h1>Send an Email</h1>
+    </header>
+    <section>
+        <article id="formarea">
+            <form name="frmCorreo" id="frmCorreo" action="#" method="POST">
+                <fieldset>
+                    <label for="maximum">Name:</label>
+                    <input type="text" name="Nombre" id="name" />
+                    <span id="txterror"></span>
+                    <label for="count">Email:</label>
+                    <input type="text" name="Correo" id="email" />
+                    <span id="txtfail"></span>
+                    <label for="message">Menssage:</label>
+                    <textarea name="Mensaje" id="message" placeholder="Ingrese un mensaje"></textarea><br />
+                    <label for="message">         </label>
+                    <input type="submit" name="send" value="SEND MENSSAGE" class="boton">
+                </fieldset>
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>
