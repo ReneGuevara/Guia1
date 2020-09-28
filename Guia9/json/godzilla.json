@@ -1,0 +1,9 @@
+{
+	"pelicula":[{
+		"nombre" : "Godzilla",
+		"personajes" : "T.J. Storm, Elizabeth Olsen, Aaron Taylor-Johnson, Ken Watanabe, Bryan Cranston, Sally Hawkins, David Strathairn y Carson Bolde",
+		"sinopsis" : "Un monstruo marino prehistórico, que ha permanecido décadas aletargado después de que la humanidad tratara de destruirlo, se enfrenta a malvadas criaturas que, animadas por la arrogancia científica del hombre, amenazan la vida de la raza humana.",
+		"director" : "Gareth Edwards"
+	}]
+	
+}
