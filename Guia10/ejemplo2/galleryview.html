@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Radio Don Bosco</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<!-- First, add jQuery (and jQuery UI if using custom easing or animation -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-
+	ui.min.js"></script>
+	<!-- Second, add the Timer and Easing plugins -->
+	<script src="js/jquery.timers-1.2.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Third, add the GalleryView Javascript and CSS files -->
+	<script src="js/jquery.galleryview-3.0-dev.js"></script>
+	<link rel="stylesheet" href="css/jquery.galleryview-3.0-dev.css" />
+	<!-- Lastly, call the galleryView() function on your unordered list(s) -->
+	<script>
+		$(function(){
+			$('#myGallery').galleryView({
+//INT - duration of panel/frame transition (in milliseconds)
+transition_speed: 2000,
+//INT - delay between panel/frame transitions (in milliseconds)
+transition_interval: 4000,
+//STRING - easing method to use for animations (jQuery provides 'swing'
+//or 'linear', more available with jQuery UI or Easing plugin)
+easing: 'swing',
+//BOOLEAN - flag to show or hide panel portion of gallery
+show_panels: true,
+//BOOLEAN - flag to show or hide panel navigation buttons
+show_panel_nav: false,
+//BOOLEAN - flag to show or hide panel overlays
+enable_overlays: true,
+//INT - width of gallery panel (in pixels)
+panel_width: 500,
+//INT - height of gallery panel (in pixels)
+panel_height: 313,
+//STRING - animation method for panel transitions (crossfade,
+//fade,slide,none)
+panel_animation: 'slide',
+//STRING - cropping option for panel images (crop = scale image and
+//fit to aspect ratio determined by panel_width and panel_height,
+//fit = scale image and preserve original aspect ratio)
+panel_scale: 'crop',
+//STRING - position of panel overlay (bottom, top)
+overlay_position: 'bottom',
+//BOOLEAN - flag to allow user to grab/drag oversized images
+//within gallery
+pan_images: true,
+pan_style: 'drag',
+//INT - determines smoothness of tracking pan animation
+//(higher number = smoother)
+pan_smoothness: 15,
+//INT - index of panel/frame to show first when gallery loads
+start_frame: 1,
+//BOOLEAN - flag to show or hide filmstrip portion of gallery
+show_filmstrip: true,
+//BOOLEAN - flag indicating whether to display navigation buttons
+show_filmstrip_nav: true,
+//BOOLEAN - flag indicating whether to display slideshow
+//play/pause button
+enable_slideshow: false,
+//BOOLEAN - flag to start slideshow on gallery load
+autoplay: false,
+//BOOLEAN - flag to show or hide frame captions
+show_captions: true,
+//INT - number of frames to show in filmstrip-only gallery
+filmstrip_size: 3,
+//STRING - type of filmstrip to use (scroll = display one line of frames,
+//scroll filmstrip if necessary, showall = display multiple rows of
+//frames if necessary)
+filmstrip_style: 'scroll',
+//STRING - position of filmstrip within gallery (bottom, top, left, right)
+filmstrip_position: 'bottom',
+//INT - width of filmstrip frames (in pixels)
+frame_width: 96,
+//INT - width of filmstrip frames (in pixels)
+frame_height: 50,
+//FLOAT - transparency of non-active frames (1.0 = opaque, 0.0 = transparent)
+frame_opacity: 0.5,
+//STRING - cropping option for filmstrip images (same as above)
+frame_scale: 'crop',
+//INT - spacing between frames within filmstrip (in pixels)
+frame_gap: 5,
+//BOOLEAN - flag to show or hide infobar
+show_infobar: true,
+//FLOAT - transparency for info bar
+infobar_opacity: 1
+});
+		});
+	</script>
+	<style type="text/css">
+		body {
+			margin: 2em 11.2em;
+			font-family: Arial,Helvetica,sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<article>
+			<ul id="myGallery">
+				<li>
+					<img data-frame=" images/small/alejandrita.jpg"
+					src="images/large/alejandra.jpg" title="Alejandra RDB" data-description="Producción de programas de la Radio Don Bosco" />
+				</li>
+				<li>
+					<img data-frame="images/small/almita.jpg" src="images/large/alma.jpg" title="Almita Burgos" data-description="Directora y jefa de la Radio Don Bosco" />
+				</li>
+				<li>
+					<img data-frame="images/small/enfoquito.jpg"
+					src="images/large/enfoque1100.jpg" title="Enfoque 1100" data-description="El programa enfoque 1100 aborda distintos tópicos de la vida bajo la dirección de la Dra. Cardoza" />
+				</li>
+				<li>
+					<img data-frame="images/small/ilianita.jpg"
+					src="images/large/iliana.jpg" title="Locutara de RDB" data-description="Iliana Gómez es locutora de la Radio Don Bosco desde hace 3 años destacando en la locución y presentación de noticias" />
+				</li>
+				<li>
+					<img data-frame="images/small/jonathansito.jpg"
+					src="images/large/jonathan.jpg" title="Buenos días" data-description="Un mensaje positivo para empezar el día, reflexiones bajo el pensamiento de San Juan Bosco y su aplicación al mundo de hoy. Se transmite todos los días a las 5:00 a.m." />
+				</li>
+				<li>
+					<img data-frame="images/small/karlita.jpg" src="images/large/karla.jpg" title="Top 11" data-description="Cambio de lista de las canciones más solicitadas durante la semana. Se transmite todos los miércoles de 10:00 a 11:00 am." />
+				</li>
+				<li>
+					<img data-frame="images/small/melissita.jpg"
+					src="images/large/melissa.jpg" title="Tecnoinnovaciones" data-description="Es un micro espacio informativo sobre detalles de lo más destacado dentro del campo tecnológico y científico, tendencias de comunicación y gadget predominantes en el mercado. Se trasmite de lunes a viernes a las 10:00 am y 6:00 pm." />
+				</li>
+				<li>
+					<img data-frame="images/small/retromixito.jpg"
+					src="images/large/retromix.jpg" title="Retromix UDB" data-description="Children filled with happiness playing in the water. Brazil. (Photo and caption by Seth Solo/People/National Geographic Photo Contest)" />
+				</li>
+				<li>
+					<img data-frame="images/small/sindita.jpg"
+					src="images/large/sindy.jpg" title="Directora de programas en RDB" data-description="Sindy está a cargo de la dirección y realización de diversos programas en Radio Don Bosco desde el 2006" />
+				</li>
+				<li>
+					<img data-frame="images/small/tecnoinnovacionsita.jpg"
+					src="images/large/tecnoinnovaciones.jpg" title="Programa Tecnoinnovaciones" data-description="Tecnoinnovaciones es un programa en donde podrás enterarte de todos las innovaciones tecnológicas que se producen a nivel mundial" />
+				</li>
+				<li>
+					<img data-frame="images/small/trujillito.jpg"
+					src="images/large/trujillo.jpg" title="Lic. Trujillo" data-description="El Lic. Trujillo docente hora clase que imparte materias como Expresión Oral y Escrita es un especialista en lengua española" />
+				</li>
+			</ul>
+		</article>
+	</section>
+</body>
+</html>
